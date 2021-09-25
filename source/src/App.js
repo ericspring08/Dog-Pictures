@@ -23,7 +23,7 @@ function App() {
     if(dog_url.endsWith('.mp4')){
       return(
         <div>
-          <video alt = "video" height={400} controls autoPlay>
+          <video alt = "dog_video" height={400} controls autoPlay>
             <source src={dog_url} type="video/mp4"/>
             Your browser does not support the video tag.
           </video>
@@ -31,7 +31,7 @@ function App() {
       )
     }else {
       return(
-        <img alt = "image" height={400} src={dog_url}></img>
+        <img alt = "dog_image" height={400} src={dog_url}></img>
       )
     }
   }
